@@ -23,9 +23,18 @@
   background: #5372F0;
 }*/
 
+/*body {
+	background-color:black;
+	color:white;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+}*/
+
 body {
 	background-color:#5372F0;
-    
+    color:white;
 	
 	display:flex;
 	flex-direction:column;
@@ -100,9 +109,10 @@ canvas {
 /* Main page */
 
 .container{
-  width: 440px;
+  width: 640px;
   border-radius: 7px;
   background: #fff;
+  color: #232323;
   box-shadow: 0 10px 20px rgba(0,0,0,0.08);
 }
 .container h2{
@@ -135,7 +145,7 @@ canvas {
   font-weight: 500;
 }
 .content input{
-  width: 100%;
+  width: 600px;
   height: 60px;
   outline: none;
   padding: 0 16px;
