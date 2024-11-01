@@ -10,6 +10,12 @@
     <script src="assets/js/script.js" defer></script>
   </head>
   <body>
+    <audio id="rightSound">
+          <source src="assets/images/right _answer_sound.mp3" />
+      </audio>
+      <audio id="wrongSound">
+          <source src="assets/images/wrong_answer_sound.mp3" />
+    </audio>
     <div class="container">
         <h2>Word Scramble</h2>
         <div class="content">
@@ -26,10 +32,10 @@
 
             <div class='middle'>
               <a href="index.html">
-                  <button>Home</button>
+                <button class="home-word">Home</button>
               </a> 
               <a href="instructions.html">
-                  <button>Instructions</button>
+                <button class="instructions-word">Instructions</button>
               </a> 
           </div>
         </div>

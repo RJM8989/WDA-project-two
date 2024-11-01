@@ -34,8 +34,7 @@
 
 body {
 	background-color:#5372F0;
-    color:white;
-	
+  color:white;
 	display:flex;
 	flex-direction:column;
 	align-items:center;
@@ -44,8 +43,6 @@ body {
 
 button {
 	padding:1em;
-	background-color:#EFEFEF;
-	color:#232323;
 	border-radius:4px;
 	border:none;
 	margin:0.25em;
@@ -110,7 +107,7 @@ canvas {
 
 .container{
   width: 640px;
-  border-radius: 7px;
+  border-radius: 10px;
   background: #fff;
   color: #232323;
   box-shadow: 0 10px 20px rgba(0,0,0,0.08);
@@ -145,16 +142,16 @@ canvas {
   font-weight: 500;
 }
 .content input{
-  width: 600px;
+  width: 570px;
   height: 60px;
   outline: none;
   padding: 0 16px;
   font-size: 18px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 1px solid #bfbfbf;
 }
 .content input:focus{
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.08);
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.8);
 }
 .content input::placeholder{
   color: #aaa;
@@ -193,6 +190,15 @@ canvas {
 .buttons .check-word:hover{
   background: #2c52ed;
 }
+
+.buttons .home-word{
+  background: #314f94;
+}
+.buttons .home-word:hover{
+  background: #256cc4;
+}
+
+
 @media screen and (max-width: 470px) {
   .container h2{
     font-size: 22px;
