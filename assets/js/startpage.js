@@ -20,7 +20,7 @@ function play() {
 
 async function logout() {
 	
-	const path = '/~/Space_Race/logout';
+	const path = '';
 	const method = 'POST';
 	
 	await fetch(path, { method })
@@ -30,7 +30,7 @@ async function logout() {
 
 async function sendScore(score) {
 	if(!isLoggedIn) return;
-	const path = '/~/Space_Race/open/leaders';
+	const path = '/~/';
 	const method = 'POST';
 	const headers = { 'Content-Type': 'application/json' }
 	const name = playername;
@@ -41,7 +41,7 @@ async function sendScore(score) {
 
 async function getLeaders() {
 
-	const path = '/~/Space_Race/open/leaders?all=true';
+	const path = '/';
 	const method = 'GET'
 	const resp = await fetch(path, { method });
 	const leaders = await resp.json();
