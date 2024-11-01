@@ -106,7 +106,7 @@ canvas {
 /* Main page */
 
 .container{
-  width: 640px;
+  width: 600px;
   border-radius: 10px;
   background: #fff;
   color: #232323;
@@ -142,7 +142,7 @@ canvas {
   font-weight: 500;
 }
 .content input{
-  width: 570px;
+  width: 550px;
   height: 60px;
   outline: none;
   padding: 0 16px;

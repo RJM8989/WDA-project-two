@@ -41,7 +41,7 @@ const checkWord = () => {
     if(userWord !== correctWord) return alert(`Oops! ${userWord} is not a correct word`) (
         wrongSound.play());
     alert(`Congrats! ${correctWord.toUpperCase()} is the correct word`) (
-        rightSound.play())(initTimer.stop);
+        rightSound.play());
     initGame();
 }
 
