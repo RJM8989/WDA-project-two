@@ -7,6 +7,34 @@ checkBtn = document.querySelector(".check-word");
 
 let correctWord, timer;
 
+
+function getCategory(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
+
+// Get the "category" parameter
+const category = getCategory("category");
+
+let selectedCategory;
+
+switch (category) {
+    case "months":
+        selectedCategory = months;
+        break;
+    case "colors":
+        selectedCategory = colors;
+        break;
+    case "random":
+        selectedCategory = words;
+        break;
+    default:
+        selectedCategory = words;
+        break;
+}
+
+
+
 const initTimer = maxTime => {
     clearInterval(timer);
     timer = setInterval(() => {
@@ -21,7 +49,7 @@ const initTimer = maxTime => {
 
 const initGame = () => {
     initTimer(30);
-    let randomObj = words[Math.floor(Math.random() * words.length)];
+    let randomObj = selectedCategory[Math.floor(Math.random() * selectedCategory.length)];
     let wordArray = randomObj.word.split("");
     for (let i = wordArray.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
@@ -40,8 +68,7 @@ const checkWord = () => {
     if(!userWord) return alert("Please enter the word to check!");
     if(userWord !== correctWord) return alert(`Oops! ${userWord} is not a correct word`) (
         wrongSound.play());
-    alert(`Congrats! ${correctWord.toUpperCase()} is the correct word`) (
-        rightSound.play());
+    // alert(`Congrats! ${correctWord.toUpperCase()} is the correct word`) (rightSound.play());
     initGame();
 }
 

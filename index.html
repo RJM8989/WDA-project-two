@@ -6,11 +6,8 @@
     <title>Word Scramble Game | CodingNepal</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="assets/js/startpage.js" defer></script>
-    <script src="assets/js/words.js" defer></script>
-    <script src="assets/js/script.js" defer></script>
   </head>
-  <body onload='load()'>
+  <body>
     <!--Title-->
     <h1>Word Scramble Game</h1>
 
@@ -22,28 +19,18 @@
 
     
    <div class="center">
-        
-            <!--Test input-->
-            <input type="text" id="name" placeholder='Enter name here (max. 10 characters)'>
-            
-            
-       
-        
-       
+        <form action="mainpage.html">
+          <!--Test input-->
+          <input type="text" id="name" placeholder='Enter name here (max. 10 characters)' required><br>
+          <label for="random">Random</label>
+          <input type="radio" name="category" id="random" value="words"><br>
+          <label for="months">Months</label>
+          <input type="radio" name="category" id="months" value="months"><br>
+          <label for="colors">Colors</label>
+          <input type="radio" name="category" id="colors" value="colors"><br>
+          <button type="submit" class="btn">Play</button>
+        </form>       
    </div>
-   <div class="middle">
-    
-        
-
-    
-    
-
-    <a href="mainpage.html">
-        <button>Play</button>
-    </a>
-        
-   
-</div>
 <div class="middle">
 
     <!--Link to the instructions-->
@@ -56,6 +43,8 @@
         <button>Leaderboards</button>
     </a>
 </div>
+
+
     
   </body>
 </html>

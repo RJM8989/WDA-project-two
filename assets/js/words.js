@@ -1,3 +1,33 @@
+let months = [
+    {
+        word: "January",
+        hint: "first"
+    },
+    {
+        word: "February",
+        hint: "second"
+    },
+    {
+        word: "March",
+        hint: "third"
+    },
+];
+
+let colors = [
+    {
+        word: "red",
+        hint: "first"
+    },
+    {
+        word: "orange",
+        hint: "second"
+    },
+    {
+        word: "yellow",
+        hint: "third"
+    },
+];
+
 let words = [
     {
         word: "addition",
